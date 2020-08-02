@@ -10,6 +10,7 @@ const Background = (props) => {
         position: 'absolute',
         backgroundSize: 'cover',
         backgroundImage: `url(${props.Background})`,
+        zIndex: -1
     }
     return (
         <div style={backgroundStyle}></div>

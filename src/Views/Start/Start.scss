@@ -1,0 +1,43 @@
+.Start-Col {
+    * {
+        color: #e3e3e3;
+    }
+    img {
+        width: 25%;
+    }
+    h1 {
+        font-size: 46px;
+    }
+    Button {
+        padding: 15px 70px;
+        position: relative;
+        border: 5px solid transparent;
+        border-radius: 35px;
+        background: rgb(237, 134, 93);
+        background: linear-gradient(-90deg, rgba(237, 134, 93, 1) 0%, rgba(241, 151, 189, 1) 100%);
+        background-clip: padding-box;
+        &::after {
+            position: absolute;
+            top: -5px;
+            bottom: -5px;
+            left: -5px;
+            right: -5px;
+            background: linear-gradient(90deg, (#f197b8) 0%, rgba(237, 136, 104, 0.47) 100%);
+            content: "";
+            z-index: -1;
+            border-radius: 35px;
+        }
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        img {
+            width: 40%;
+        }
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
