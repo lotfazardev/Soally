@@ -1,0 +1,29 @@
+#footer-tag {
+    * {
+        color: #e3e3e3;
+    }
+    #footer-app-name-intro {
+        font-size: 31px;
+    }
+    #footer-app-name {
+        font-size: 34px;
+        padding: 0 10px;
+        background: rgb(184, 59, 94);
+        background: linear-gradient(-90deg, rgba(184, 59, 94, 1) 0%, rgba(239, 137, 93, 1) 100%);
+        border-radius: 20px 10px 10px  10px ;
+    }
+    #footer-des {
+        font-size: 15px;
+    }
+    @media only screen and (max-width: 768px) {
+        #footer-app-name-intro {
+            font-size: 25px;
+        }
+        #footer-app-name {
+            font-size: 25px;
+        }
+        #footer-des {
+            font-size: 15px;
+        }
+    }
+}

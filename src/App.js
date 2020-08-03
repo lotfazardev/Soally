@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Background from './Components/Background/Background';
 import Start from './Views/Start/Start';
-import './App.scss'
+import './App.scss';
+import SoallyTag from './Components/SoallyTag/SoallyTag';
 
 function App() {
   const [Data, SetData] = useState({})
@@ -24,8 +25,11 @@ function App() {
         id="row"
         className='d-flex flex-column justify-content-center align-items-center'>
         <Start Intro={Data.intro} Logo={Data.logo_url} />
-
       </Row>
+      <Row id='footer' className="d-flex justify-content-center align-items-end pb-2">
+        <SoallyTag />
+      </Row>
+
     </Container>
   );
 }
