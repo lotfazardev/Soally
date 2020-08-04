@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'Yekan-Bakh';
+  src: url('./Fonts/Yekan-Bakh.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   text-align: center;
+  font-family: "Yekan-Bakh";
+  font-weight: bold;
 }
 
 body {
@@ -14,4 +23,5 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
 

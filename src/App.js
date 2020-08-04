@@ -26,7 +26,7 @@ function App() {
         className='d-flex flex-column justify-content-center align-items-center'>
         <Start Intro={Data.intro} Logo={Data.logo_url} />
       </Row>
-      <Row id='footer' className="d-flex justify-content-center align-items-end pb-2">
+      <Row id='footer' className="d-flex justify-content-center align-items-end pb-3">
         <SoallyTag />
       </Row>
 
