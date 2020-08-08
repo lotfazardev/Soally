@@ -6,9 +6,25 @@
         color: #e3e3e3;
     }
 }
-#stepper{
+#stepper {
     direction: ltr;
 }
-#Qustions-footer{
+#Qustions-footer {
     min-height: 35%;
 }
+.choice {
+    background-color: #df5e88 !important;
+    font-size: 25px !important;
+    padding: 5px 20px !important;
+    border: none !important;
+    border-radius: 44px !important;
+    margin: 4.5px 0px !important;
+    &:active{
+        border: none !important;
+        outline: none !important;
+    }
+    @media only screen and (min-width: 767px) {
+        margin: 0px 0px !important;
+    }
+}
+

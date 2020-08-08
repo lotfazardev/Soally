@@ -78,11 +78,13 @@ const Questions = ({ match, Data }) => {
                             <Col xs={12} sm={12} md={10} lg={8}>
                                 <h1>{item.text}</h1>
                             </Col>
-                            <Col xs={12} sm={12} md={10} lg={8}>
+
+                            <Col xs={12} sm={12} md={8} lg={6}
+                            className="d-flex flex-column align-items-start flex-md-row align-items-md-center justify-content-md-between">
                                 {
                                     item.options.map((current, index) => {
                                         return (
-                                            <Button onClick={() => handelClick(item.id, current.key)} key={current.key}>
+                                            <Button className="choice" onClick={() => handelClick(item.id, current.key)} key={current.key}>
                                                 {current.text}
                                             </Button>
                                         );
