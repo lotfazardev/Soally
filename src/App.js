@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 import Background from './Components/Background/Background';
 import Start from './Views/Start/Start';
 import './App.scss';
@@ -59,6 +59,15 @@ function App() {
             { key: 1, text: "بله" },
             { key: 2, text: "تقریبا" },
             { key: 3, text: "افتضاحه" },
+          ]
+        },
+        {
+          id: "k23e5",
+          text: "آیا حضرت یونس میداند از نهنگش بار میکشیم ؟",
+          options: [
+            { key: 1, text: "بله" },
+            { key: 2, text: "شاید" },
+            { key: 3, text: "اصلا" },
           ]
         },
       ]
