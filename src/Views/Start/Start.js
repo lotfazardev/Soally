@@ -3,6 +3,7 @@ import { Col, Button } from 'reactstrap';
 
 import './Start.scss';
 import { useHistory } from 'react-router-dom';
+import Logo from '../../Components/Logo/Logo';
 
 const Start = (props) => {
     const history = useHistory();
@@ -17,7 +18,7 @@ const Start = (props) => {
                 className="Start-Col"
                 xs={12} sm={12} md={10} lg={8}>
                 <h1>{props.Intro}</h1>
-                <img className='mt-2' src={props.Logo} />
+                <Logo src={props.Logo}/>
             </Col>
             <Col
                 className="Start-Col mt-5"

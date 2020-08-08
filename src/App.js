@@ -22,7 +22,7 @@ function App() {
       organization_name: "Docker",
       organization_name_fa: "داکر",
       intro: "فرم نظر سنجی و ارتقا سطح خدمت رسانی",
-      "logo_url": "https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png",
+      logo_url: "https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png",
       background_url: `https://picsum.photos/${window.innerWidth}/${window.innerHeight}/?blur=10`,
       questions: [
         {
@@ -91,7 +91,7 @@ function App() {
           </Route>
           <Route path="/:id"
             render={props => (
-              <Questions {...props} Questions={Data.questions}/>
+              <Questions {...props} Data={Data} />
             )} />
         </Switch>
       </Container>
